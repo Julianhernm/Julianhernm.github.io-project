@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Verificar si hay un usuario logueado
+
   const usuario = localStorage.getItem("loggedInUser");
   if (!usuario) {
     window.location.href = "login.html";
   } else {
-    document.getElementById("saludoUsuario").textContent = `Bienvenido, ${usuario}`;
+    const dataUser = JSON.parse(usuario);
+    document.getElementById("saludoUsuario").textContent = `Bienvenido, ${dataUser.user}`;
   }
 });
 
-// Función para cambiar contenido según botón
 function cambiarVista(vista) {
   const contenido = document.getElementById("vista");
 
