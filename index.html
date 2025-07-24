@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto Educativo K.I.N.A.L.</title>
+  <link rel="icon" type="img" href="img/kinal.jpg">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    
+    <aside class="sidebar">
+       <div class="logo">
+        <img src="img/kinal.jpg" alt="kinal"><h2>K.I.N.A.L.</h2>
+       </div>
+      <ul>
+        <li><button onclick="cambiarVista('alumnos')">Alumnos</button></li>
+        <li><button onclick="cambiarVista('inscribir')">Inscribir Alumno</button></li>
+        <li><button onclick="cambiarVista('remover')">Remover Alumno</button></li>
+        <li><button onclick="cambiarVista('calificaciones')">Calificaciones</button></li>
+        <li><button onclick="cambiarVista('maestros')">Maestros</button></li>
+        <li><button onclick="cambiarVista('pagos')">Pagos</button></li>
+        <li><button id = "btnCerrarSesion">Cerrar sesión</button></li>
+      </ul>
+    </aside>
+
+    <main class="contenido">
+      <h2 id="saludoUsuario">Bienvenido</h2>
+      <div id="vista"></div>
+    </main>
+
+  <div class="modal" id="modalCerrarSesion">
+  <div class="modal-contenido">
+    <p>¿Estás seguro de cerrar sesión?</p>
+    <div class="modal-botones">
+      <button class="btn btn-confirmar" id="confirmarCerrar">Sí</button>
+      <button class="btn btn-cancelar" id="cancelarCerrar">No</button>
+    </div>
+  </div>
+</div>
+  <script src="index.js"></script>
+</body>
+</html>
