@@ -1,0 +1,12 @@
+[
+  {
+    "usuario":"admin",
+    "contrasena":"admin123",
+    "rol":"administrador"
+  }
+  {
+    "usuario":"julian",
+    "contrasena":"julian123",
+    "rol":"profesor"
+  }
+]
