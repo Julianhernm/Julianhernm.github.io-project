@@ -1,12 +1,12 @@
 [
   {
-    "usuario":"admin",
-    "contrasena":"admin123",
-    "rol":"administrador"
-  }
+    "user": "admin",
+    "pass": "admin123",
+    "rol": "administrador"
+  },
   {
-    "usuario":"julian",
-    "contrasena":"julian123",
-    "rol":"profesor"
+    "user": "julian",
+    "pass": "julian123",
+    "rol": "alumno"
   }
 ]
